@@ -15,7 +15,7 @@
 
     const CONFIG = {
         /* the script will run only on URLs that contain this identifier, ex: http://jira.mycompany.com */
-        URL_IDENTIFIER_FOR_JIRA: 'jira',
+        URL_IDENTIFIER_FOR_JIRA: '.atlassian.net',
 
         RUN_EVERY_SECONDS : 10, //seconds
 
@@ -23,7 +23,8 @@
         ISSUES_TABLES_SELECTOR: [
             'div.gadget',
             '.results-panel',
-            '.ghx-issuetable'
+            '.ghx-issuetable',
+            '#issuetable'
         ],
 
         ENRICH_FILTER_RESULTS: true,
